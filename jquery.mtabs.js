@@ -21,7 +21,7 @@
 		});
 		$(content).hide();
 		$(content+''+active).show();
-		this.find('*').unbind('click');
+		this.find('*').unbind('click'); //deactivate click event for childnodes
 		this.click(function(){
 			$(this).parent().find($(this).get(0).tagName).removeClass('active');
 			$(this).addClass('active');
