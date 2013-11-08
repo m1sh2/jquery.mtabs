@@ -12,7 +12,7 @@
  */
 
 (function($){
-	$.fn.mtabs = function(activeClass,content) {
+	$.fn.mtabs = function(activeClass,content){
 		var active;
 		this.each(function(){
 			if($(this).hasClass(activeClass)){
